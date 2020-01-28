@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/tickets', 'TicketsController@index');
+
+Route::post('/tickets', 'TicketsController@store');
