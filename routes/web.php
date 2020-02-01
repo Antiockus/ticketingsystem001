@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/tickets', 'TicketsController@index');
 
 Route::post('/tickets', 'TicketsController@store');
+
+Route::get('/about', 'HomeController@about');
